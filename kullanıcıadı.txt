@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+        String user, pass, newPass, change;
+        Scanner bjk = new Scanner(System.in);
+
+        System.out.println("PLS ENTER THE USERNAME  :");
+        user = bjk.nextLine();
+
+        System.out.println("PLS ENTER THE PASSWORD  :");
+        pass = bjk.nextLine();
+
+        System.out.println(user + "  and  " + pass);
+
+        if ((user.equals("pers")) && (pass.equals("laronza"))) {
+            System.out.println("GREAT U CAN IN !");
+           } else  {
+            System.out.println("WRONG INFO PLS TRY AGAIN FOR yes OR PLS CHANGE PASS no");
+
+            System.out.println("pls choose yes or no ");
+            change = bjk.nextLine();
+            if (change.equals("no")) {
+                System.out.println("PLS ENTER A NEW PASSWORD  :");
+                newPass = bjk.nextLine();
+                if (!(newPass.equals("laronza"))) {
+                    System.out.println("PASSWORD IS OK");
+
+                } else {
+                    System.out.println("PASSWORD IS AGAIN PLEASE TRY AGAIN");
+                }
+            }
+        }
+
+
+    }
+}
